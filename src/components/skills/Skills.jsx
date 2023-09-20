@@ -1,95 +1,129 @@
 import React from "react";
-import "./services.css";
+import "./skills.css";
 import { BiCheck } from "react-icons/bi";
+import {AiOutlineHtml5} from "react-icons/ai";
+import {DiCss3} from "react-icons/di";
 
-const Services = () => {
+const Skills = () => {
   return (
-    <section id="services">
-      <h5>What I Offer</h5>
-      <h2>Services</h2>
+    <section id="skills">
+      <h5>What I Know</h5>
+      <h2>Skills</h2>
       <div className="container services__container">
         <article className="service">
           <div className="service__head">
-            <h3>UI/UX Design</h3>
+            <h3>Frontend</h3>
           </div>
           <ul className="service__list">
             <li>
-              <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur elit.</p>
+              <AiOutlineHtml5 className="service__list-icon" />
+              <p>HTML</p>
+            </li>
+            <li>
+              <DiCss3 className="service__list-icon" />
+              <p>CSS</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur elit.</p>
+              <p>JavaScript</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur elit.</p>
+              <p>Bootstrap</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur elit.</p>
+              <p>Tailwind</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur elit.</p>
+              <p>React</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Redux</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>ThreeJs</p>
             </li>
           </ul>
         </article>
         <article className="service">
           <div className="service__head">
-            <h3>Web Development</h3>
+            <h3>Backend + Database</h3>
           </div>
           <ul className="service__list">
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur elit.</p>
+              <p>Nodejs</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur elit.</p>
+              <p>ExpressJS</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur elit.</p>
+              <p>EJS</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur elit.</p>
+              <p>Pug</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur elit.</p>
+              <p>MySQL</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur elit.</p>
+              <p>MongoDB</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>DynamoDB</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Sequelize</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Mongoose</p>
             </li>
           </ul>
         </article>
         <article className="service">
           <div className="service__head">
-            <h3>Content Creation</h3>
+            <h3>Others</h3>
           </div>
           <ul className="service__list">
-            <li>
+          <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur elit.</p>
+              <p>Git</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur elit.</p>
+              <p>Github</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur elit.</p>
+              <p>Postman API</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur elit.</p>
+              <p>Figma</p>
             </li>
             <li>
               <BiCheck className="service__list-icon" />
-              <p>Lorem ipsum, dolor sit amet consectetur elit.</p>
+              <p>Wordpress</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>C++</p>
+            </li>
+            <li>
+              <BiCheck className="service__list-icon" />
+              <p>Python</p>
             </li>
           </ul>
         </article>
@@ -98,4 +132,4 @@ const Services = () => {
   );
 };
 
-export default Services;
+export default Skills;

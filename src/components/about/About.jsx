@@ -5,7 +5,7 @@ import { FaAward, FaUsers, FaFolderOpen } from "react-icons/fa";
 
 const About = () => {
   return (
-    <section id="about">
+    <section id="about" className="">
       <h5>Get To Know</h5>
       <h2>About Me</h2>
       <div className="container about__container">
@@ -16,18 +16,24 @@ const About = () => {
         </div>
         <div className="about__content">
           <div className="about__cards">
-            <article className="about__card">
-              <FaAward className="about__icon" />
+            <article className="about__card ">
+              <div className="flex justify-center">
+                <FaAward className="about__icon" />
+              </div>
               <h5>Experience</h5>
               <small>2+ Years</small>
             </article>
             <article className="about__card">
-              <FaUsers className="about__icon" />
+              <div className="flex justify-center">
+                <FaUsers className="about__icon" />
+              </div>
               <h5>Clients</h5>
-              <small>6+ Worldwide</small>
+              <small>4+ Across India</small>
             </article>
             <article className="about__card">
-              <FaFolderOpen className="about__icon" />
+              <div className="flex justify-center">
+                <FaFolderOpen className="about__icon" />
+              </div>
               <h5>Projects</h5>
               <small>8+ Completed</small>
             </article>
@@ -38,7 +44,7 @@ const About = () => {
             led multiple projects and am eager to translate my technical skills
             into real-world solutions
           </p>
-          <a href="#contact" className="btn btn-primary">
+          <a href="#contact" className="btn btn-primary mb-20">
             Let's Talk
           </a>
         </div>

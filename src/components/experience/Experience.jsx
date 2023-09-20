@@ -1,103 +1,223 @@
 import React from "react";
 import "./experience.css";
-import { BsPatchCheckFill } from "react-icons/bs";
+import { ReactComponent as WorkIcon } from "../../assets/work.svg";
+import isrlIcon from "../../assets/isrl-logo.jpg";
+import gdscIcon from "../../assets/gdsc-logo.png";
+import velocityIcon from "../../assets/velocity-logo.png";
+import ecellIcon from "../../assets/ecell-logo.PNG";
+import kutnitiIcon from "../../assets/bricsKutniti.svg";
 
-const Experience = () => {
+
+import { ReactComponent as SchoolIcon } from "../../assets/school.svg";
+import timelineElements from "./timelineElements";
+import { BsDot } from "react-icons/bs";
+import { FaCircle } from "react-icons/fa";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+
+import "react-vertical-timeline-component/style.min.css";
+
+function Experience() {
+  let workIconStyles = { background: "#06D6A0" };
+  let schoolIconStyles = { background: "#f9c74f" };
+
   return (
-    <section id="experience">
-      <h5>What Skills I Have</h5>
-      <h2>My Experience</h2>
-      <div className="container experience__container">
-        <div className="experience__frontend">
-          <h3>Frontend Development</h3>
-          <div className="experience__content">
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>HTML</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>CSS</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>JavaScript</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Bootstrap</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Tailwind</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>React</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-          </div>
+    <div id="experience">
+      <div className="title mt-20">
+        <div className="flex justify-center text-gray-400 font-semibold">
+          My Work
         </div>
-        <div className="experience__backend">
-          <h3>Backend Development</h3>
-          <div className="experience__content">
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Node JS</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>MongoDB</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>MySQL</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Express</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-            <article className="experience__details">
-              <BsPatchCheckFill className="experience__details-icon" />
-              <div>
-                <h4>Python</h4>
-                <small className="text-light">Experienced</small>
-              </div>
-            </article>
-          </div>
+        <div className="mb-10 flex justify-center text-blue-400 font-semibold">
+          Experience
         </div>
       </div>
-    </section>
+      <VerticalTimeline>
+    
+            <VerticalTimelineElement
+              className="text-white"
+              key={timelineElements[0].key}
+              date={timelineElements[0].date}
+              dateClassName="date text-white"
+              iconStyle={{ background: 'rgb(255, 255, 255)', color: '#fff' }}
+              icon={<img src={kutnitiIcon} className="h-11 flex mt-3" alt="ISRL Logo" />}
+            >
+            
+              <div className=" text-[30px] font-semibold text-white">
+                {timelineElements[0].title}
+              </div>
+              <div className=" text-xl text-gray-500 font-semibold mb-2">
+                {timelineElements[0].location}
+              </div>
+
+              <div className="flex">
+                <div className="mt-1 mr-2">
+                  <FaCircle className="w-2" />
+                </div>
+                <div>{timelineElements[0].descriptionLine1}</div>
+              </div>
+              <div className="flex">
+                <div className="mt-1 mr-2">
+                  <FaCircle className="w-2" />
+                </div>
+                <div>{timelineElements[0].descriptionLine2}</div>
+              </div>
+              <div className="flex">
+                <div className="mt-1 mr-2">
+                  <FaCircle className="w-2" />
+                </div>
+                <div>{timelineElements[0].descriptionLine3}</div>
+              </div>
+            </VerticalTimelineElement>
+
+            <VerticalTimelineElement
+              className="text-white"
+              key={timelineElements[1].key}
+              date={timelineElements[1].date}
+              dateClassName="date text-white"
+              iconStyle={{ background: 'rgb(255, 255, 255)', color: '#fff' }}
+              icon={<img src={isrlIcon} className="w-10 flex ml-2.5 mt-2.5" alt="ISRL Logo" />}
+            >
+            
+              <div className=" text-[30px] font-semibold text-white">
+                {timelineElements[1].title}
+              </div>
+              <div className=" text-xl text-gray-500 font-semibold mb-2">
+                {timelineElements[1].location}
+              </div>
+
+              <div className="flex">
+                <div className="mt-1 mr-2">
+                  <FaCircle className="w-2" />
+                </div>
+                <div>{timelineElements[1].descriptionLine1}</div>
+              </div>
+              <div className="flex">
+                <div className="mt-1 mr-2">
+                  <FaCircle className="w-2" />
+                </div>
+                <div>{timelineElements[1].descriptionLine2}</div>
+              </div>
+              <div className="flex">
+                <div className="mt-1 mr-2">
+                  <FaCircle className="w-2" />
+                </div>
+                <div>{timelineElements[1].descriptionLine3}</div>
+              </div>
+            </VerticalTimelineElement>
+
+            <VerticalTimelineElement
+              className="text-white"
+              key={timelineElements[2].key}
+              date={timelineElements[2].date}
+              dateClassName="date text-white"
+              iconStyle={{ background: 'rgb(255, 255, 255)', color: '#fff' }}
+              icon={<img src={gdscIcon} className="w-10 flex ml-2.5 mt-4" alt="ISRL Logo" />}
+            >
+            
+              <div className=" text-[30px] font-semibold text-white">
+                {timelineElements[2].title}
+              </div>
+              <div className=" text-xl text-gray-500 font-semibold mb-2">
+                {timelineElements[2].location}
+              </div>
+
+              <div className="flex">
+                <div className="mt-1 mr-2">
+                  <FaCircle className="w-2" />
+                </div>
+                <div>{timelineElements[2].descriptionLine1}</div>
+              </div>
+              <div className="flex">
+                <div className="mt-1 mr-2">
+                  <FaCircle className="w-2" />
+                </div>
+                <div>{timelineElements[2].descriptionLine2}</div>
+              </div>
+              <div className="flex">
+                <div className="mt-1 mr-2">
+                  <FaCircle className="w-2" />
+                </div>
+                <div>{timelineElements[2].descriptionLine3}</div>
+              </div>
+            </VerticalTimelineElement>
+
+            <VerticalTimelineElement
+              className="text-white"
+              key={timelineElements[3].key}
+              date={timelineElements[3].date}
+              dateClassName="date text-white"
+              iconStyle={{ background: 'rgb(0, 0, 0)', color: '#fff' }}
+              icon={<img src={velocityIcon} className="w-10 flex ml-2.5 mt-2.5" alt="ISRL Logo" />}
+            >
+            
+              <div className=" text-[30px] font-semibold text-white">
+                {timelineElements[3].title}
+              </div>
+              <div className=" text-xl text-gray-500 font-semibold mb-2">
+                {timelineElements[3].location}
+              </div>
+
+              <div className="flex">
+                <div className="mt-1 mr-2">
+                  <FaCircle className="w-2" />
+                </div>
+                <div>{timelineElements[3].descriptionLine1}</div>
+              </div>
+              <div className="flex">
+                <div className="mt-1 mr-2">
+                  <FaCircle className="w-2" />
+                </div>
+                <div>{timelineElements[3].descriptionLine2}</div>
+              </div>
+              <div className="flex">
+                <div className="mt-1 mr-2">
+                  <FaCircle className="w-2" />
+                </div>
+                <div>{timelineElements[3].descriptionLine3}</div>
+              </div>
+            </VerticalTimelineElement>
+
+            <VerticalTimelineElement
+              className="text-white"
+              key={timelineElements[4].key}
+              date={timelineElements[4].date}
+              dateClassName="date text-white"
+              iconStyle={{ background: 'rgb(0, 0, 0)', color: '#fff' }}
+              icon={<img src={ecellIcon} className="w-12 flex ml-2 mt-2 rounded-full" alt="ISRL Logo" />}
+            >
+            
+              <div className=" text-[30px] font-semibold text-white">
+                {timelineElements[4].title}
+              </div>
+              <div className=" text-xl text-gray-500 font-semibold mb-2">
+                {timelineElements[4].location}
+              </div>
+
+              <div className="flex">
+                <div className="mt-1 mr-2">
+                  <FaCircle className="w-2" />
+                </div>
+                <div>{timelineElements[4].descriptionLine1}</div>
+              </div>
+              <div className="flex">
+                <div className="mt-1 mr-2">
+                  <FaCircle className="w-2" />
+                </div>
+                <div>{timelineElements[4].descriptionLine2}</div>
+              </div>
+              <div className="flex">
+                <div className="mt-1 mr-2">
+                  <FaCircle className="w-2" />
+                </div>
+                <div>{timelineElements[4].descriptionLine3}</div>
+              </div>
+            </VerticalTimelineElement>
+
+      </VerticalTimeline>
+    </div>
   );
-};
+}
 
 export default Experience;

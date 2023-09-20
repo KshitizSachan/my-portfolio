@@ -2,22 +2,22 @@ import React from "react";
 import Header from "./components/header/Header";
 import Nav from "./components/nav/Nav";
 import About from "./components/about/About";
+import Hobbies from "./components/hobbies/hobbies";
+import Skills from "./components/skills/Skills";
+import Projects from "./components/projects/Projects";
 import Experience from "./components/experience/Experience";
-import Services from "./components/services/Services";
-import Portfolio from "./components/portfolio/Portfolio";
-import Testimonials from "./components/testimonials/Testimonials";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 
 
+
+
 // TODOS
-// 1. Add a timeline on experience after skills
-// 2. Add hobbies and certifications on Basketball
-// 3. Update hero section
+
+// 1. Highlight live demo button with a red dot
+// 2. Tinder based cards for college skills like os, dbms, cn etc horizontal to hobbies
+// 3. Add certifications
 // 4. Add glassmorphism
-// 5. Highlight live demo button with a red dot
-
-
 
 
 const App = () => {
@@ -27,9 +27,10 @@ const App = () => {
       <Nav />
       <About />
       <Experience />
-      <Services />
-      <Portfolio />
-      <Testimonials />
+      {/* Phase 1 done till here  */}
+      <Skills />
+      <Projects />
+      <Hobbies />
       <Contact />
       <Footer />
     </>

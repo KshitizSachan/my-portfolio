@@ -42,12 +42,13 @@
 }
 
 .service__list-icon {
+  font-size: 2rem;
   color: var(--color-primary);
   margin-top: 2px;
 }
 
 .service__list p {
-  font-size: 0.9rem;
+  font-size: 1.1rem;
 }
 
 /* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */

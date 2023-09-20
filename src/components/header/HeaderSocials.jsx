@@ -1,5 +1,6 @@
 import React from "react";
 import { BsLinkedin, BsGithub, BsDribbble } from "react-icons/bs";
+import {SiLeetcode} from "react-icons/si"
 
 const HeaderSocials = () => {
   return (
@@ -11,7 +12,7 @@ const HeaderSocials = () => {
         <BsGithub />
       </a>
       <a href="https://leetcode.com/kshitiz_sachan/" target="_blank" rel="noreferrer">
-        <BsDribbble />
+        <SiLeetcode />
       </a>
     </div>
   );

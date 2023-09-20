@@ -2,6 +2,7 @@ import React from "react";
 import CTA from "./CTA";
 import HeaderSocials from "./HeaderSocials";
 import "./header.css";
+import { Typewriter } from 'typewriting-react';
 
 import ME from "../../assets/me.png";
 
@@ -11,7 +12,8 @@ const Header = () => {
       <div className="container header__container">
         <h5>Hello I'm</h5>
         <h1>Kshitiz Sachan</h1>
-        <h5 className="text-light">Fullstack Developer</h5>
+        <Typewriter cursorClassName='cursor' words={['Fullstack Web Developer', 'Cyber Security Enthusiast']} />
+        {/* <h5 className="text-light">Fullstack Developer</h5> */}
         <CTA />
         <HeaderSocials />
         <div className="me">

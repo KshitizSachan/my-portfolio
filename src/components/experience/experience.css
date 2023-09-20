@@ -1,71 +1,78 @@
-.experience__container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+
+
+.vertical-timeline-element-content:hover {
+  background: transparent !important;
+  border-color: var(--color-primary-variant) !important;
+  cursor: default !important;
 }
 
-.experience__container > div {
-  background: var(--color-bg-variant);
-  padding: 2.4rem 5rem;
-  border-radius: 2rem;
-  border: 1px solid transparent;
-  transition: var(--transition);
+.vertical-timeline-element-content {
+  border: 1px solid transparent !important;
+  background: var(--color-bg-variant) !important;
+  transition: var(--transition) !important;
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important
 }
 
-.experience__container > div:hover {
-  background: transparent;
-  border-color: var(--color-primary-variant);
-  cursor: default;
+/* body {
+  background: #3da3d5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: rgb(53, 53, 53);
 }
 
-.experience__container > div h3 {
+.title {
+  font-size: 15em;
   text-align: center;
-  margin-bottom: 2rem;
-  color: var(--color-primary);
+  font-family: "Bebas Neue", sans-serif;
 }
 
-.experience__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+h3 {
+  padding-top: 0.25em;
 }
 
-.experience__details {
-  display: flex;
-  gap: 1rem;
+.vertical-timeline-element-content {
+  box-shadow: 0 0.25em 0.5em 0 rgba(0, 0, 0, 0.25),
+    0 0.4em 1.25em 0 rgba(0, 0, 0, 0.15) !important;
+  padding: 2em 3em !important;
 }
 
-.experience__details-icon {
-  font-size: 1.2rem;
-  margin-top: 6px;
-  color: var(--color-primary);
+.date {
+  color: rgb(201, 251, 255);
 }
 
-/* ========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
-@media screen and (max-width: 1024px) {
-  .experience__container {
-    grid-template-columns: 1fr;
+#description {
+  margin: 1.5em 0 2em 0;
+}
+
+.button {
+  text-decoration: none;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+  color: white;
+}
+
+.workButton {
+  background-color: #06d6a0;
+}
+
+.workButton:hover {
+  background-color: #0ac593;
+}
+
+.schoolButton {
+  background-color: #f9c74f;
+}
+
+.schoolButton:hover {
+  background-color: #f3bc3c;
+}
+
+@media only screen and (max-width: 1700px) {
+  .vertical-timeline-element-date {
+    display: block !important;
+    float: none !important;
+    color: rgb(44, 44, 44);
+    margin-top: 1.5em;
   }
-
-  .experience__container > div {
-    width: 80%;
-    padding: 2rem;
-    margin: 0 auto;
-  }
-
-  .experience__content {
-    padding: 1rem;
-  }
-}
-
-/* ========== MEDIA QUERIES (SMALL DEVICES) ========== */
-@media screen and (max-width: 600px) {
-  .experience__container {
-    gap: 1rem;
-  }
-
-  .experience__container > div {
-    width: 100%;
-    padding: 2rem 1rem;
-  }
-}
+} */
