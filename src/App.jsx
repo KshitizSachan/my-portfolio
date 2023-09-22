@@ -14,7 +14,6 @@ import Footer from "./components/footer/Footer";
 
 // TODOS
 
-// 1. Highlight live demo button with a red dot
 // 2. Tinder based cards for college skills like os, dbms, cn etc horizontal to hobbies
 // 3. Add certifications
 // 4. Add glassmorphism
@@ -27,10 +26,9 @@ const App = () => {
       <Nav />
       <About />
       <Experience />
-      {/* Phase 1 done till here  */}
       <Skills />
       <Projects />
-      <Hobbies />
+      {/* <Hobbies /> */}
       <Contact />
       <Footer />
     </>

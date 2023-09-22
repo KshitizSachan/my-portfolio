@@ -4,8 +4,11 @@ import IMG1 from "../../assets/portfolio 1.png";
 import IMG2 from "../../assets/portfolio2.png";
 import IMG3 from "../../assets/portfolio3.png";
 import IMG4 from "../../assets/portfolio4.png";
-import IMG5 from "../../assets/portfolio5.png";
-import IMG6 from "../../assets/portfolio6.jpg";
+import IMG5 from "../../assets/portfolio5.PNG";
+import IMG6 from "../../assets/portfolio6.PNG";
+import {SiGithub} from "react-icons/si";
+import { FaCircle } from "react-icons/fa";
+
 
 const data = [
   {
@@ -39,16 +42,16 @@ const data = [
   {
     id: 5,
     image: IMG5,
-    title: "Charts templates & infographics in Figma",
-    github: "https://github.com",
-    demo: "https://dribbble.com/shots/16541289-Orion-UI-kit-Charts-templates-infographics-in-Figma",
+    title: "College Website: New college website for IIIT Dharwad approved by the authorities",
+    github: "https://github.com/KshitizSachan/College-Website",
+    demo: "https://github.com/KshitizSachan/College-Website",
   },
   {
     id: 6,
     image: IMG6,
-    title: "Charts templates & infographics in Figma",
-    github: "https://github.com",
-    demo: "https://dribbble.com/shots/15887665-Orion-UI-kit-Charts-templates-infographics-in-Figma",
+    title: "BlocSoc: Website for the blockchain clubs at IIIT Dharwad",
+    github: "https://github.com/BlocSoc/Club-website",
+    demo: "https://github.com/BlocSoc/Club-website",
   },
 ];
 
@@ -56,7 +59,7 @@ const Projects = () => {
   return (
     <section id="projects">
       <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
+      <h2>Projects</h2>
       <div
         className="container 
       portfolio__container"
@@ -70,7 +73,10 @@ const Projects = () => {
               <h3>{title}</h3>
               <div className="portfolio__item-cta">
                 <a href={github} className="btn">
+                <div className="flex items-center">
+                  <SiGithub className=" mr-2 flex "/>
                   Github
+                </div>
                 </a>
                 <a
                   href={demo}
@@ -78,7 +84,11 @@ const Projects = () => {
                   target="_blank"
                   rel="noreferrer"
                 >
+                <div className="flex items-center">
+                  <FaCircle className="text-red-500 mr-2 w-3 flex "/>
                   Live Demo
+                </div>
+                  
                 </a>
               </div>
             </article>

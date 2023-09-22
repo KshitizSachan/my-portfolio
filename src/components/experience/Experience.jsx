@@ -10,7 +10,6 @@ import kutnitiIcon from "../../assets/bricsKutniti.svg";
 
 import { ReactComponent as SchoolIcon } from "../../assets/school.svg";
 import timelineElements from "./timelineElements";
-import { BsDot } from "react-icons/bs";
 import { FaCircle } from "react-icons/fa";
 import {
   VerticalTimeline,
@@ -41,7 +40,7 @@ function Experience() {
               date={timelineElements[0].date}
               dateClassName="date text-white"
               iconStyle={{ background: 'rgb(255, 255, 255)', color: '#fff' }}
-              icon={<img src={kutnitiIcon} className="h-11 flex mt-3" alt="ISRL Logo" />}
+              icon={<img src={kutnitiIcon} className="h-11 flex lg:mt-3 mt-1" alt="ISRL Logo" />}
             >
             
               <div className=" text-[30px] font-semibold text-white">
@@ -77,7 +76,7 @@ function Experience() {
               date={timelineElements[1].date}
               dateClassName="date text-white"
               iconStyle={{ background: 'rgb(255, 255, 255)', color: '#fff' }}
-              icon={<img src={isrlIcon} className="w-10 flex ml-2.5 mt-2.5" alt="ISRL Logo" />}
+              icon={<img src={isrlIcon} className="lg:w-10 w-7 ml-1 mt-1 flex lg:ml-2.5 lg:mt-2.5" alt="ISRL Logo" />}
             >
             
               <div className=" text-[30px] font-semibold text-white">
@@ -113,7 +112,7 @@ function Experience() {
               date={timelineElements[2].date}
               dateClassName="date text-white"
               iconStyle={{ background: 'rgb(255, 255, 255)', color: '#fff' }}
-              icon={<img src={gdscIcon} className="w-10 flex ml-2.5 mt-4" alt="ISRL Logo" />}
+              icon={<img src={gdscIcon} className="lg:w-10 flex lg:ml-2.5 lg:mt-4 mt-3 ml-1.5 w-7" alt="ISRL Logo" />}
             >
             
               <div className=" text-[30px] font-semibold text-white">
@@ -149,7 +148,7 @@ function Experience() {
               date={timelineElements[3].date}
               dateClassName="date text-white"
               iconStyle={{ background: 'rgb(0, 0, 0)', color: '#fff' }}
-              icon={<img src={velocityIcon} className="w-10 flex ml-2.5 mt-2.5" alt="ISRL Logo" />}
+              icon={<img src={velocityIcon} className="w-10 flex lg:ml-2.5 lg:mt-2.5 " alt="ISRL Logo" />}
             >
             
               <div className=" text-[30px] font-semibold text-white">
@@ -185,7 +184,7 @@ function Experience() {
               date={timelineElements[4].date}
               dateClassName="date text-white"
               iconStyle={{ background: 'rgb(0, 0, 0)', color: '#fff' }}
-              icon={<img src={ecellIcon} className="w-12 flex ml-2 mt-2 rounded-full" alt="ISRL Logo" />}
+              icon={<img src={ecellIcon} className="w-12 flex lg:ml-2 lg:mt-2 rounded-full" alt="ISRL Logo" />}
             >
             
               <div className=" text-[30px] font-semibold text-white">

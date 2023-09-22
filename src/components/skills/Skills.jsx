@@ -1,8 +1,15 @@
 import React from "react";
 import "./skills.css";
-import { BiCheck } from "react-icons/bi";
+import { BiCheck} from "react-icons/bi";
 import {AiOutlineHtml5} from "react-icons/ai";
 import {DiCss3} from "react-icons/di";
+import {TbBrandJavascript} from "react-icons/tb";
+import {FaBootstrap, FaReact, FaNodeJs} from "react-icons/fa";
+import {SiGit, SiTailwindcss, SiRedux, SiThreedotjs, SiExpress, SiPug, SiMysql, SiMongodb, SiAmazondynamodb, SiSequelize, SiDatabricks
+,SiGithub,SiPostman, SiSwagger, SiFigma, SiWordpress, SiCplusplus, 
+SiPython, SiKalilinux, SiSass } from "react-icons/si";
+import {IoLogoJavascript} from "react-icons/io5";
+
 
 const Skills = () => {
   return (
@@ -24,27 +31,31 @@ const Skills = () => {
               <p>CSS</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <SiSass className="service__list-icon" />
+              <p>SCSS</p>
+            </li>
+            <li>
+              <TbBrandJavascript className="service__list-icon" />
               <p>JavaScript</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <FaBootstrap className="service__list-icon" />
               <p>Bootstrap</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <SiTailwindcss className="service__list-icon" />
               <p>Tailwind</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <FaReact className="service__list-icon" />
               <p>React</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <SiRedux className="service__list-icon" />
               <p>Redux</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <SiThreedotjs className="service__list-icon" />
               <p>ThreeJs</p>
             </li>
           </ul>
@@ -55,39 +66,39 @@ const Skills = () => {
           </div>
           <ul className="service__list">
             <li>
-              <BiCheck className="service__list-icon" />
+              <FaNodeJs className="service__list-icon" />
               <p>Nodejs</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <SiExpress className="service__list-icon" />
               <p>ExpressJS</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <IoLogoJavascript className="service__list-icon" />
               <p>EJS</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <SiPug className="service__list-icon" />
               <p>Pug</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <SiMysql className="service__list-icon" />
               <p>MySQL</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <SiMongodb className="service__list-icon" />
               <p>MongoDB</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <SiAmazondynamodb className="service__list-icon" />
               <p>DynamoDB</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <SiSequelize className="service__list-icon" />
               <p>Sequelize</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <SiDatabricks className="service__list-icon" />
               <p>Mongoose</p>
             </li>
           </ul>
@@ -98,33 +109,42 @@ const Skills = () => {
           </div>
           <ul className="service__list">
           <li>
-              <BiCheck className="service__list-icon" />
+              <SiGit className="service__list-icon" />
               <p>Git</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <SiGithub className="service__list-icon" />
               <p>Github</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <SiPostman className="service__list-icon" />
               <p>Postman API</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <SiSwagger className="service__list-icon" />
+              <p>Swagger</p>
+            </li>
+            <li>
+              <SiFigma className="service__list-icon" />
               <p>Figma</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <SiWordpress className="service__list-icon" />
               <p>Wordpress</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <SiCplusplus className="service__list-icon" />
               <p>C++</p>
             </li>
             <li>
-              <BiCheck className="service__list-icon" />
+              <SiPython className="service__list-icon" />
               <p>Python</p>
             </li>
+            <li>
+              <SiKalilinux className="service__list-icon" />
+              <p>Ethical Hacking</p>
+            </li>
+            
           </ul>
         </article>
       </div>
