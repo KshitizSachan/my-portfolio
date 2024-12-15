@@ -1,9 +1,8 @@
 import React from "react";
 import "./projects.css";
-import IMG1 from "../../assets/portfolio 1.png";
+import IMG1 from "../../assets/portfolio1.PNG";
 import IMG2 from "../../assets/portfolio2.png";
 import IMG3 from "../../assets/portfolio3.png";
-import IMG4 from "../../assets/portfolio4.png";
 import IMG5 from "../../assets/portfolio5.PNG";
 import IMG6 from "../../assets/portfolio6.PNG";
 import {SiGithub} from "react-icons/si";
@@ -14,44 +13,37 @@ const data = [
   {
     id: 1,
     image: IMG1,
-    title: "Kutniti Website: Visualizing the perception each country has of India",
-    github: "https://github.com/KshitizSachan/kutniti-frontend",
-    demo: "https://kutniti.watch/",
+    title: "AlmaMatter: Alumni Networking website, IIIT Dharwad.",
+    github: "https://github.com/KshitizSachan/alumni-network-iiitdwd",
+    demo: "https://almamatter.netlify.app/",
   },
   {
     id: 2,
     image: IMG2,
+    title: "Kutniti Website: Visualizing the perception each country has of India",
+    github: "https://github.com/KshitizSachan/kutniti-frontend",
+    demo: "https://kutniti.watch",
+  },
+  {
+    id: 3,
+    image: IMG3,
     title: "Lesson Link: A mordern all in one learning management system",
     github: "https://github.com/KshitizSachan/Lesson-Link-codebase",
     demo: "https://lessonlink.netlify.app/",
   },
   {
-    id: 3,
-    image: IMG3,
-    title: "Dream Home: DBMS mini project on property dealings software",
-    github: "https://github.com/KshitizSachan/DreamHome",
-    demo: "https://github.com/KshitizSachan/DreamHome",
-  },
-  {
     id: 4,
-    image: IMG4,
-    title: "ScholarChat: A website for scholars to collaborate on using orc ids",
-    github: "https://github.com/KshitizSachan/ScholarChat_v2",
-    demo: "https://scholarchat.org/",
+    image: IMG5,
+    title: "College Website: College website for IIIT Dharwad.",
+    github: "https://github.com/KshitizSachan/College-Website",
+    demo: "https://www.iiitdwd.ac.in",
   },
   {
     id: 5,
-    image: IMG5,
-    title: "College Website: New college website for IIIT Dharwad approved by the authorities",
-    github: "https://github.com/KshitizSachan/College-Website",
-    demo: "https://github.com/KshitizSachan/College-Website",
-  },
-  {
-    id: 6,
     image: IMG6,
-    title: "BlocSoc: Website for the blockchain clubs at IIIT Dharwad",
+    title: "BlocSoc: College Club Website for the blockchain club at IIIT Dharwad",
     github: "https://github.com/BlocSoc/Club-website",
-    demo: "https://github.com/BlocSoc/Club-website",
+    demo: "https://club-blocsoc-iiitdwd.netlify.app",
   },
 ];
 

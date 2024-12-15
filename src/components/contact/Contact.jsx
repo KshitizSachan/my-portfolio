@@ -15,9 +15,9 @@ const Contact = () => {
               <MdOutlineEmail className="contact__option-icon" />
             </div>
             <h4>Email</h4>
-            <h5 className="text-sm">21bcs057@iiitdwd.ac.in</h5>
+            <h5 className="text-sm">kshitizsachan422@gmail.com</h5>
             <a
-              href="mailto:21bcs057@iiitdwd.ac.in"
+              href="mailto:kshitizsachan422@gmail.com"
               target="_blank"
               rel="noreferrer"
             >
@@ -43,9 +43,9 @@ const Contact = () => {
               <MdOutlineEmail className="contact__option-icon" />
             </div>
             <h4>Email</h4>
-            <h5 className="text-sm">kshitizsachan422@gmail.com</h5>
+            <h5 className="text-sm">21bcs057@iiitdwd.ac.in</h5>
             <a
-              href="mailto:kshitizsachan422@gmail.com"
+              href="mailto:21bcs057@iiitdwd.ac.in"
               target="_blank"
               rel="noreferrer"
             >

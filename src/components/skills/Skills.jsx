@@ -3,11 +3,11 @@ import "./skills.css";
 import { BiCheck} from "react-icons/bi";
 import {AiOutlineHtml5} from "react-icons/ai";
 import {DiCss3} from "react-icons/di";
-import {TbBrandJavascript} from "react-icons/tb";
-import {FaBootstrap, FaReact, FaNodeJs} from "react-icons/fa";
+import {TbBrandJavascript, TbBrandNextjs} from "react-icons/tb";
+import {FaBootstrap, FaReact, FaNodeJs, FaAws, FaDocker  } from "react-icons/fa";
 import {SiGit, SiTailwindcss, SiRedux, SiThreedotjs, SiExpress, SiPug, SiMysql, SiMongodb, SiAmazondynamodb, SiSequelize, SiDatabricks
-,SiGithub,SiPostman, SiSwagger, SiFigma, SiWordpress, SiCplusplus, 
-SiPython, SiKalilinux, SiSass } from "react-icons/si";
+,SiGithub,SiPostman, SiSwagger, SiFigma, SiWordpress, SiCplusplus, SiMiro, 
+SiPython, SiKalilinux, SiSass, SiMui, SiTypescript, SiRecoil, SiPostgresql  } from "react-icons/si";
 import {IoLogoJavascript} from "react-icons/io5";
 
 
@@ -23,46 +23,50 @@ const Skills = () => {
           </div>
           <ul className="service__list">
             <li>
-              <AiOutlineHtml5 className="service__list-icon" />
-              <p>HTML</p>
-            </li>
-            <li>
-              <DiCss3 className="service__list-icon" />
-              <p>CSS</p>
-            </li>
-            <li>
-              <SiSass className="service__list-icon" />
-              <p>SCSS</p>
-            </li>
-            <li>
-              <TbBrandJavascript className="service__list-icon" />
-              <p>JavaScript</p>
-            </li>
-            <li>
-              <FaBootstrap className="service__list-icon" />
-              <p>Bootstrap</p>
-            </li>
-            <li>
-              <SiTailwindcss className="service__list-icon" />
-              <p>Tailwind</p>
+              <TbBrandNextjs className="service__list-icon" />
+              <p>Next</p>
             </li>
             <li>
               <FaReact className="service__list-icon" />
               <p>React</p>
             </li>
             <li>
+              <SiTypescript className="service__list-icon" />
+              <p>Typescript</p>
+            </li>
+            <li>
+              <TbBrandJavascript className="service__list-icon" />
+              <p>JavaScript</p>
+            </li>
+            <li>
+              <SiMui className="service__list-icon" />
+              <p>MUI</p>
+            </li>
+            <li>
+              <SiTailwindcss className="service__list-icon" />
+              <p>Tailwind</p>
+            </li>
+            <li>
+              <FaBootstrap className="service__list-icon" />
+              <p>Bootstrap</p>
+            </li>
+            <li>
               <SiRedux className="service__list-icon" />
               <p>Redux</p>
             </li>
             <li>
-              <SiThreedotjs className="service__list-icon" />
-              <p>ThreeJs</p>
+              <SiRecoil className="service__list-icon" />
+              <p>Recoil</p>
+            </li>
+            <li>
+              <AiOutlineHtml5 className="service__list-icon" />
+              <p>HTML & CSS</p>
             </li>
           </ul>
         </article>
         <article className="service">
           <div className="service__head">
-            <h3>Backend + Database</h3>
+            <h3>Backend & Database</h3>
           </div>
           <ul className="service__list">
             <li>
@@ -78,20 +82,16 @@ const Skills = () => {
               <p>EJS</p>
             </li>
             <li>
-              <SiPug className="service__list-icon" />
-              <p>Pug</p>
-            </li>
-            <li>
               <SiMysql className="service__list-icon" />
               <p>MySQL</p>
             </li>
             <li>
-              <SiMongodb className="service__list-icon" />
-              <p>MongoDB</p>
+              <SiPostgresql className="service__list-icon" />
+              <p>PostgreSQL</p>
             </li>
             <li>
-              <SiAmazondynamodb className="service__list-icon" />
-              <p>DynamoDB</p>
+              <SiMongodb className="service__list-icon" />
+              <p>MongoDB</p>
             </li>
             <li>
               <SiSequelize className="service__list-icon" />
@@ -109,16 +109,20 @@ const Skills = () => {
           </div>
           <ul className="service__list">
           <li>
-              <SiGit className="service__list-icon" />
-              <p>Git</p>
+              <FaAws  className="service__list-icon" />
+              <p>AWS</p>
+            </li>
+            <li>
+              <FaDocker  className="service__list-icon" />
+              <p>Docker</p>
             </li>
             <li>
               <SiGithub className="service__list-icon" />
-              <p>Github</p>
+              <p>Git & Github</p>
             </li>
             <li>
               <SiPostman className="service__list-icon" />
-              <p>Postman API</p>
+              <p>Postman</p>
             </li>
             <li>
               <SiSwagger className="service__list-icon" />
@@ -127,6 +131,10 @@ const Skills = () => {
             <li>
               <SiFigma className="service__list-icon" />
               <p>Figma</p>
+            </li>
+            <li>
+              <SiMiro className="service__list-icon" />
+              <p>Miro</p>
             </li>
             <li>
               <SiWordpress className="service__list-icon" />
@@ -139,10 +147,6 @@ const Skills = () => {
             <li>
               <SiPython className="service__list-icon" />
               <p>Python</p>
-            </li>
-            <li>
-              <SiKalilinux className="service__list-icon" />
-              <p>Ethical Hacking</p>
             </li>
             
           </ul>

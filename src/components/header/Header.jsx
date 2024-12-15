@@ -4,7 +4,7 @@ import HeaderSocials from "./HeaderSocials";
 import "./header.css";
 import { Typewriter } from 'typewriting-react';
 
-import ME from "../../assets/me.png";
+import ME from "../../assets/me.jpg";
 
 const Header = () => {
   return (
@@ -17,7 +17,20 @@ const Header = () => {
         <CTA />
         <HeaderSocials />
         <div className="me">
-          <img src={ME} alt="me" />
+        <div style={{ width: '300px', overflow: 'hidden' }}>
+      <img
+        src={ME}
+        alt="me"
+        style={{
+          width: '100%',
+          height: '100%',
+          borderTopLeftRadius: '40px',
+          borderTopRightRadius: '40px',
+          objectFit: 'cover',
+        }}
+      />
+    </div>
+          {/* <img src={ME} alt="me" /> */}
         </div>
         <a href="#contact" className="scroll__down">
           Scroll Down

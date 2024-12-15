@@ -21,13 +21,13 @@ const About = () => {
                 <FaAward className="about__icon" />
               </div>
               <h5>Experience</h5>
-              <small>2+ Years</small>
+              <small>1+ Years(Intern)</small>
             </article>
             <article className="about__card">
               <div className="flex justify-center">
                 <FaUsers className="about__icon" />
               </div>
-              <h5>Clients</h5>
+              <h5>Freelance Clients</h5>
               <small>4+ Across India</small>
             </article>
             <article className="about__card">
@@ -35,14 +35,14 @@ const About = () => {
                 <FaFolderOpen className="about__icon" />
               </div>
               <h5>Projects</h5>
-              <small>8+ Completed</small>
+              <small>7+ Completed</small>
             </article>
           </div>
           <p>
-            I am a 3rd year CSE student with a flair for web development and
-            cyber security. Freelanced and interned as a fullstack developer,
+            I am a final year CSE student with a flair for web development, cloud and
+            cyber security. Freelanced and interned as fullstack developer,
             led multiple projects and am eager to translate my technical skills
-            into real-world solutions
+            into real-world solutions.
           </p>
           <a href="#contact" className="btn btn-primary mb-20">
             Let's Talk
